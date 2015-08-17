@@ -8,7 +8,7 @@ import re
 import collections
 
 '''
-从文件中读取内容，溶剂词频
+从文件中读取内容，统计词频
 '''
 def count_word(path):
     result = {}
