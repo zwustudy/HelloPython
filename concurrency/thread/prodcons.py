@@ -2,12 +2,12 @@
 '''
 Created on 2015年8月23日
 
-@author: minmin
+@author: zwustudy
 '''
 import random
 import time
 import myThread
-import Queue
+from queue import Queue
 import threading
 
 '''
@@ -20,7 +20,7 @@ def producer(queue, nsleep, nprod, name, a, lock):
         for i in range(nprod):
             lock.acquire()
             queue.put(a[0], 1)
-            print '%s生产了一个产品：%d, 当前队列大小：%d' % (name, a[0], queue.qsize())
+            print('%s生产了一个产品：%d, 当前队列大小：%d' % (name, a[0], queue.qsize()))
             a[0] += 1
             lock.release()
         time.sleep(nsleep)
@@ -34,13 +34,13 @@ def consumer(queue, nsleep, minProd, maxProd, name):
         nprod = random.randint(minProd, maxProd)
         for i in range(nprod):
             val = queue.get(1)    
-            print '%s消费了一个产品：%d, 当前队列大小：%d' % (name, val, queue.qsize())
+            print('%s消费了一个产品：%d, 当前队列大小：%d' % (name, val, queue.qsize()))
             
         time.sleep(nsleep)
 
 def main():
     
-    queue = Queue.Queue(10)
+    queue = Queue(10)
     a = [0]
     
     lock = threading.Lock()

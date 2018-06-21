@@ -19,7 +19,7 @@ import time
 '''    
 def producePrime1(max):
     for i in range(2, max + 1):
-        if __isPrime(i): print i
+        if __isPrime(i): print(i)
 
 '''
 筛选法找质数，即“埃拉托色尼筛法”，挖掉2的倍数、3的倍数、一直到max的平方根的倍数，剩下的都是质数了
@@ -39,7 +39,7 @@ def producePrime2(max):
     
     for i in li:
         if i != 0:
-            print i  
+            print(i)
 
 '''
 从小到大，输出前count(count > 10)个质数
@@ -62,7 +62,7 @@ def producePrePrime(count):
     j = 0
     for i in li:
         if i != 0:
-            print i
+            print(i)
             j += 1
             if j >= count:
                 break  

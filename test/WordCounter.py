@@ -42,5 +42,5 @@ if __name__ == '__main__':
     dword = sort_by_count(dword)
     
     for key,value in dword.items():
-        print key + ":%d" % value
+        print(key + ":%d" % value)
 

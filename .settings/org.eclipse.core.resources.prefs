@@ -1,10 +1,11 @@
 eclipse.preferences.version=1
-encoding//multithread/myThread.py=utf-8
-encoding//multithread/prodcons.py=utf-8
-encoding//multithread/producer_customer.py=utf-8
-encoding//multithread/thread_example04.py=utf-8
-encoding//multithread/thread_example05.py=utf-8
-encoding//multithread/thread_facfib.py=utf-8
+encoding//concurrency/coroutine/example01.py=utf-8
+encoding//concurrency/thread/myThread.py=utf-8
+encoding//concurrency/thread/prodcons.py=utf-8
+encoding//concurrency/thread/producer_customer.py=utf-8
+encoding//concurrency/thread/thread_example04.py=utf-8
+encoding//concurrency/thread/thread_example05.py=utf-8
+encoding//concurrency/thread/thread_facfib.py=utf-8
 encoding//test/PrimeProducer.py=utf-8
 encoding//test/WordCounter.py=utf-8
 encoding//with/with_example01.py=utf-8
