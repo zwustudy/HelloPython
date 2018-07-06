@@ -21,7 +21,7 @@ if __name__ == '__main__':
     f = open("my father.txt")
     p = example03.printer()
     example03.follow(f,
-           broadcast([example03.grep('mandolin',p),
+                     broadcast([example03.grep('mandolin',p),
                       example03.grep('a',p),
                       example03.grep('music',p)])
                       )
